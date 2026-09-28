@@ -1,0 +1,126 @@
+               Date Type 
+
+
+Definition of data type is what type of data a variable is storing 
+
+
+Optional to mentioning data type in TS and JS
+[syntax is (Keyword(var/int/const) VariableName:datatype(optional)= value
+
+For Example - let K:num = 10]
+
+JAVASCRIPT Language is Dynamic in nature so user able to assign same different type of value in same variable 
+
+
+for Example - 
+
+var K = "ts";
+var K = 100;
+
+When user declered data type then while write a code giving "annotations can only be used in TypeScript files." this kind of suggestion 
+
+
+But TYPESCRIPT Language is Static in Nature so user not able to assign same different type of value in same variable it is showing error while writing a code 
+
+var K = "ts";
+var K = 100;  //not allowed this 
+
+TYPES of DATA TYPE -
+
+1.Primitive data type - Data type which is store single value 
+for Example -
+a.Number = It is combination of Integer (90,-78) and floating number (-6.7,24.67)
+For Example - 
+
+let num1 = 90.45
+let num2 = 45
+
+typeof - Which return the data type of a variable 
+
+consloe.log(typeof num1);
+
+consloe.log(typeof num2);
+
+after execuation Print as number 
+
+Interview Question - 
+
+What is difference between below two syntax?? or difference between INFERENCE and Annotation??
+
+let num1 = 90.45
+let num2:number = 45
+
+
+Answer is first syntax data type not mentioing system (implicity)automatically identity bases on value that is called INFERENCE  and in second syntax data type of variable explicity is known as type Annotation 
+
+Whenever JS and TS is able to identify the data type of a variable implicitly is known as INFERENCE 
+
+
+b.string - Sequence of characters - string ,text ,word 
+For example -
+
+Single Quote ('') - String literal 
+let singleQupte = 'This is a single quote string '
+
+Double Quote ("") - String literal
+let doubleQuote = "This is a single quote string"
+
+Backtick (``) - Template literal
+a)For multi -line string 
+
+let multiline =`this is 
+a multtiline 
+string`
+
+b) for string paramterization - calling variable inside a string 
+
+let age - 20 
+
+let message = "Your age is $(`age`)
+
+console.log(message);
+
+
+
+c.boolean - true or false this two value in boolen 
+
+d.null -
+num6 = null
+
+
+e.undefine -
+
+ num6 = undfine
+
+
+f.Union(|) - Combination of multiple datatype (number|string)
+
+g.any - It is free to accept any type of data type 
+
+let num6:ant = 10 
+mumber ="TS"
+num6 = true 
+num6 = null 
+num6 = undfine
+
+h.void - function 
+
+
+2.Non-Primitive data type - Data type which is store more than 1 value
+for Example -
+
+a.Array
+
+b.String
+
+C.object 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+Definition Functions - It is a set of instruction that perform a specific task
+
+Types of Function and when can be use -
+
+1. Named Function - Function declaration - Where we also defining name of the function and Whenever you thing try to write a function which can be utilizes once (If you want to reuse the function at multiple places)
+2. Anonymous Function - Function Expression - Callback function (paramterized of another function)
+3. Arrow Function (ES6 - 2015) - Lambda Function - Callback function (paramterized of another function)
+4. Constructor Function - It is user whenever we create a Class, initialized the value of variable inside the class whenever try to declare
+
+
+1. Named Function - Function declaration - A function which will be declared along with a name is known as fucntion declaration
+
+Syntax -
+
+It is start with fucntion key word and function name always start with lower case letter and if there is multiple word is there then first word of next name letter will be capital , Function also take a parameter as well
+
+function functionName (parameters)
+{
+ block of code (Activity and action)
+ Return
+
+}
+
+functionName (argument) // calling the function 
+
+TypeScript -
+
+
+function functionName (parameters:datatype(optional)):returnType(optional)
+{
+   block of code 
+   Return // return statment be last statment inside the function body  
+//void - Not need to write datatype and returnType automatically consider as Void .Void Means not return anything 
+}
+
+
+Difference Between Parameter and argument -
+
+
+Parameter - It is somethimg that you define it at the time declaration of function whenever try to defining the function and you have prvioded any kind of varibale in function parenthesis is known as parameter
+
+Argument - At the time of declaration given variable in function parenthesis is known as arument
+
+
+Difference Between Function declaration and Function Expression -
+
+Function declaration - Become Named function
+
+Function Expression - Become Anonymous function
+
+Below are the type of function that you can define any program - 
+
+A.Non-Parameterisd and Non-returning function -
+
+
+function greet(){
+    console.log("Hello, Welcome to Typescript") // log + enter
+}
+
+greet()
+
+
+B.Non-Parameterisd and returning function -
+
+function greetings(){
+    return "Welcome to Typescript"
+}
+
+let result = greetings()
+console.log(result)
+
+
+C.Parameterisd and Non-returning function -
+
+function login(username:string, password:string){
+    console.log("Username is : ", username)
+    console.log("Password is : ", password);
+    console.log(result);
+}
+
+login("Test", "Test1")
+login("Testing", "Test@123")
+
+
+
+D.Parameterisd and returning function-
+
+function add(a:number, b:number){ // a, b - Parameters
+    return a+b
+}
+
+const sum = add(10,20) // 10,20 - Arguments
+console.log(sum)
+
+ 
+
+
+
+
+
+
+
+
+CallBack Function - A function which will be utilised as a parameter of another function is known as call back function
+
+
+function login1(fun:Function)
+{ fun - callback function
+    fun()
+}
+
+login1(function(){
+    console.log("This is a call back");
+ 
+})
+
+
+
+function login(){
+    // fill the username
+    // fill the password -
+    // click on login button
+}
+
+// login()
+
+
+// 100 TCs - 300 lines of code - 195
+
+// Duplication - Solve the problem of duplication
+// Maintaining - 100 Test Cases to fix the issue - 99 steps
+// Reusability - We can reuse the code whenever we want

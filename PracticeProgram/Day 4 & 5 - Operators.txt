@@ -1,0 +1,289 @@
+Definition of Operators - Operators is a symbol that perform various operators
+
+Type of operators - 
+1. Arithmetic Operators
+2. Comparison Operators
+3. Logical Operators
+4. Assignment Operators
+5. Ternary Operator - If else statement
+
+
+1. Arithmetic Operators - Used to perform mathematical calculations
+    
+    A. Addition (+)
+    B. Subtraction (-)
+    C. Multiplication (*)
+    D. Division (/)
+    E. Modulus (%) - Remainder
+    F. Exponential (**) - Power
+    G. Increment (++) - Increase the value of the variable by 1
+    H. Decrement (--) - Decrease the value of the variable by 1
+    I. Unary 
+
+   Example -
+
+    let number1 = 10
+    let number2 = 3
+
+    A. Addition (+) - Addition or concatenation
+    console.log(number1 + number2);
+
+    B. Subtraction (-)
+    console.log(number1 - number2);
+
+    C. Multiplication (*)
+    console.log(number1 * number2)
+
+    D. Division (/)
+    console.log(number1 / number2) 
+    Result -  10/3 - 3.333333
+
+    E. Modulus (%) - Remainder after the division
+    console.log(number1 % number2); 
+    Result - 11 % 3  actual value is -2 but system shown 1 because Modulus always give you positive value 0 or more than 0 
+
+    F. Exponential (**) - Power
+    console.log(number1 ** number2) 
+    Result - 10 ** 3 = 10^3 = 10*10*10
+
+    G. Increment (++) - Increase the value of the variable by 1
+
+    let number3 = 10
+
+    a. Pre-increment (++number3) - First the value of the variable will get incremented and then the action will be performed.
+
+    console.log(++number3) 
+
+    Result -  11
+    
+
+    let number4 = 10
+
+    b. Post-increment (number3++) - First the action will be performed and then the value of variable will be incremented
+
+    console.log(number4++)
+
+    Result - 10
+
+    console.log(number4) 
+
+    Result -11
+
+   H. Decrement (--) - Decreases the value of the variable by 1 , This is mostly used in Loops 
+
+        a. pre-decrement (--variable)
+        Example -
+
+        let num6 = 10;
+
+        console.log(--num6); 
+        Result - 9
+ 
+        b. post-decrement (variable--)
+
+        Example - 
+
+        let num5 = 10;
+        console.log(num5--);   
+        Result -9
+        console.log(num5);     
+        Result -8
+
+     
+
+   I. Unary operator- It is an operator that works on only one operand (one variable or one value), It is related to plus an minus and             logical operator 
+
+  Example - 
+
+  1. Unary Plus (+)
+
+  Converts a value into a number.
+
+  let str = "100";
+  let num = +str;
+
+  console.log(num);        // 100
+  console.log(typeof num); // number
+
+  2. Unary Minus (-)
+
+  Converts a value to a number and changes its sign.
+
+  let value = "50";
+
+  console.log(-value); // -50
+     
+
+  2. Comparison Operators - Used to compare the two values and return the result in the form of boolean (true/false)
+       
+          Type of comparison Operators-
+
+          A. Equal to (==)
+          B. Not Equal to (!=)
+          C. Strict Equal to (===)
+          D. Strict Not Equal to (!==)
+          E. Greater than (>)
+          F. Greater than or equal (>=)
+          G. Less than (<)
+          H. Less than or equal (<=)
+
+        A. Equal to (==) - Check if the two VALUES are same or not
+
+        Example -
+        let number5 = 10
+        let number6 = 10 
+         
+        console.log(number5 == number6) 
+        Result -  10 == 10  = True 
+
+        
+        let number5 = 10
+        let number6 = "10"
+
+ 
+        console.log(number5 == number6)
+
+        Result -  10 == "10"  = True (while writing a code it is throwing and error because both have different data type )
+
+
+        Type Coercion - Implicit(auto) conversion of one data type into other datatype (Exp let number5 = 10  let number6 = "10")
+
+        Type Conversion - Explicitly(user try to convert manually) conversion of one data type into another  (Exp let number5 = 10 
+        let number6 = Number("10"))
+
+
+        B. Not Equal to (!=) - Opposite to Equal to
+
+        Example -
+
+        Let x = 10 
+        Let x = 12
+
+       console.log(x != x) 
+       Result - True
+
+        Let x = 10
+        Let x = 10
+
+       console.log(x != x)
+       Result - False
+
+
+
+       C. Strict Equal to (===) - Checks if the two VALUES along with DATATYPES of the variables are same or not
+        Example -
+
+        let number5 = 10
+        let number6 = "10"
+        console.log(number5 === number6)
+
+        Result - False
+        
+ 
+
+       D. Strict Not Equal to (!==) - Opposite to Strict Equal to
+         
+       Example -
+
+        let number5 = 10
+        let number6 = "10"
+        console.log(number5 !== number6)
+
+        Result - True
+
+        E. Greater than (>)
+        Example -
+
+        let number5 = 5
+        let number6 = 2
+        console.log(number5 > number6)
+
+        Result - True
+
+        F. Greater than or equal (>=)
+         Example -
+
+        let number5 = 5
+        let number6 = 2
+        console.log(number5 >= number6)
+
+        Result - True
+
+        G. Less than (<) 
+        Example -
+
+        let number5 = 10
+        let number6 = 20
+        console.log(number5 < number6)
+
+        Result - True
+
+        H. Less than or equal (<=)
+        Example -
+
+        let number5 = 20
+        let number6 = 20
+        console.log(number5 <= number6)
+
+        Result - True
+ 
+
+     3. Logical Operators - Used to compare multiple conditions to get the final result. It will compare 2 expressions and return the     result in the form of Boolean.
+
+     Type of Logical Operators -
+
+       A. AND (&&) - Both of the conditions are true then only it will return us return
+       B. OR (||) - Either of the condition is true - it will return us a true value
+       C. NOT (!) - It will reverse the result from true to false and false to true
+        
+        
+       A. AND (&&) -
+      Example -
+
+      true && true - true
+      true && false - false
+      false && true - false
+      false && false - false
+
+    console.log("AND (&&)", (10>6) && (20>13)) // true
+    console.log("AND (&&)", (10>6) && (20>130)) // false
+    console.log("AND (&&)", (10>60) && (20>13)) // false
+    console.log("AND (&&)", (10>60) && (20>130)) // false
+  
+
+
+     B. OR (||) -
+     Example - 
+
+     true || true - true
+     true || false - true
+     false || true - true
+     false || false - false
+
+    console.log("OR (||)", (10>6) || (20>13)) // true
+    console.log("OR (||)", (10>6) || (20>130)) // true
+    console.log("OR (||)", (10>60) || (20>13)) // true
+    console.log("OR (||)", (10>60) || (20>130)) // false
+    
+    
+    C. NOT (!) - Reverse the result
+    Example - 
+
+    !true - false
+    !false - true
+
+   console.log(!(20 >15)) // false
+
+
+
+   4. Assignment Operator  - Assigns the value to a variable
+
+   let a1 = 90
+
+
+Interview Question -
+   What is difference between =, == and === ?
+
+   = - Assigns the value to a variable
+   == - check if the the VALUES are variables are same or not
+   === - Check if the VALUES along with the DATATYPES are same or not
